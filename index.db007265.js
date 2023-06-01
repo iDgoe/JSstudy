@@ -1,2 +1,0 @@
-!function(){var t=!0,r=!1,l=void 0;try{for(var o,n=[{title:"The Last Kingdom",author:"Bernard Cornwell",rating:8.38},{title:"На березі спокійних вод",author:"Роберт Шеклі",rating:8.51},{title:"Сон смішної людини",author:"Федір Достоєвський",rating:7.75}][Symbol.iterator]();!(t=(o=n.next()).done);t=!0){var a=o.value;console.log(a),console.log(a.title)}}catch(t){r=!0,l=t}finally{try{t||null==n.return||n.return()}finally{if(r)throw l}}}();
-//# sourceMappingURL=index.db007265.js.map
