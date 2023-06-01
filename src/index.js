@@ -149,41 +149,55 @@
 // book.removeBook('2');
 // console.log(book.getBooks());
 
-const book = {
-    title: "The Last Kingdom",
-    author: "Bernard Cornwell",
-    genres: ["historical prose", "adventure"],
-    rating: 8.38,
-  };
+// const book = {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["historical prose", "adventure"],
+//     rating: 8.38,
+//   };
 
 //   console.log(book.hasOwnProperty('title'));
 //   console.log(Object.keys(book));
 
-const books = [
-    {
-      title: "The Last Kingdom",
-      author: "Bernard Cornwell",
-      rating: 8.38,
-    },
-    {
-      title: "На березі спокійних вод",
-      author: "Роберт Шеклі",
-      rating: 8.51,
-    },
-    {
-      title: "Сон смішної людини",
-      author: "Федір Достоєвський",
-      rating: 7.75,
-    },
-  ];
+// const books = [
+//     {
+//       title: "The Last Kingdom",
+//       author: "Bernard Cornwell",
+//       rating: 8.38,
+//     },
+//     {
+//       title: "На березі спокійних вод",
+//       author: "Роберт Шеклі",
+//       rating: 8.51,
+//     },
+//     {
+//       title: "Сон смішної людини",
+//       author: "Федір Достоєвський",
+//       rating: 7.75,
+//     },
+//   ];
 
-  for (const book of books) {
-    // Об'єкт книги
-    console.log(book);
-    // Назва
-    console.log(book.title);
-    // // Автор
-    // console.log(book.author);
-    // // Рейтинг
-    // console.log(book.rating);
-  }
+// const temps = [14, -4, 25, 8, 11];
+
+// console.log(temps);
+// console.log(Math.max(temps));
+// console.log(...temps);
+// console.log(Math.max(...temps));
+
+// const y = [...temps];
+// console.log(y);
+
+// const x = [...temps, ...y];
+
+// const first = { propA: 5, propB: 10 };
+// const second = { propC: 15 };
+// const third = {...second, ...first };
+// console.log(third);
+
+function multiply(...args) {
+  console.log(args); // масив усіх аргументів
+}
+
+multiply(1, 2);
+multiply(1, 2, 3);
+multiply(1, 2, 3, 4);
