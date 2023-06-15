@@ -1,2 +1,4 @@
 @import url('./reset.css');
-@import url('./constacts.css');
+@import url('./constants.css');
+@import url('./header.css');
+@import url('./hero.css')

@@ -194,10 +194,16 @@
 // const third = {...second, ...first };
 // console.log(third);
 
-function multiply(...args) {
-  console.log(args); // масив усіх аргументів
-}
+// function greet(name) {
+//   return `Ласкаво просимо ${name}.`;
+// }
+// console.log(greet("Манго"));
+// console.log(greet);
 
-multiply(1, 2);
-multiply(1, 2, 3);
-multiply(1, 2, 3, 4);
+const numbers = [5, 10, 15, 20, 25];
+
+const logMessage = (number, index) => {
+  console.log(`Індекс ${index}, значення ${number}`);
+};
+
+numbers.forEach(logMessage);

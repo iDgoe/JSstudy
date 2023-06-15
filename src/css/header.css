@@ -1,12 +1,23 @@
-@import url(./costants.css);
+@import url(./constants.css);
 
-.header {
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 1000;
+  justify-content: center;
+  /* position: sticky; */
+}
+
+/* .header {
   padding: 20px 0;
   justify-content: center;
   position: sticky;
   top: 0px;
   z-index: 1000;
-}
+} */
 
 .header-el {
   display: flex;
@@ -63,7 +74,6 @@
 
 .header-input::placeholder {
   font-weight: bold;
-  /* opacity: 0.5; */
   color: var(--text);
 }
 
