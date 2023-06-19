@@ -1,6 +1,179 @@
 @import url(./constants.css);
 
-.hero_section {
+
+.hero {
+    margin-bottom: 80px;
+    margin-top: 92px;
+  }
+
+  .hero-section {
+    font-family: 'Poppins';
+    color: var(--text);
+  }
+
+  .hero-subtitle {
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    color: var(--text07);
+    margin-bottom: 14px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+  
+  .hero-title {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-desc {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+
+  .hero-buttons-list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .hero-btn {
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 12px;
+    border: 1px solid rgba(250, 250, 250, 0.5);
+border-radius: 1000px;
+margin-top: 20px;
+}
+
+.hero-btn:hover {
+    background-color: #272a65;
+    transition: 0.1s ease-in-out;
+    transform: scale(1.01);
+  }
+
+  /* NEEDS TO BE CHANGED AFTER JS SLIDER*/
+.spiderman-slider-img,
+.hulk-slider-img,
+.spiderman-card-img,
+.hulk-card-img,
+.characters-desc-spiderman,
+.characters-desc-hulk {
+  display: none;
+}
+
+/* NEEDS TO BE CHANGED AFTER JS SLIDER*/
+.slider-buttons {
+    position: relative;
+    right: 155px;
+    top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transform: rotate(90deg);
+    gap: 14px;
+    margin-bottom: 18px;
+  }
+
+  .slider-btn {
+    background-color: rgba(23, 23, 23, 0.8);
+    border: none;
+    width: 72px;
+    height: 4px;
+  }
+
+  .slider-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .first-slider-btn {
+    background-color: var(--btn3);
+  }
+
+  .slider-img {
+    margin-left: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .slider-img:hover {
+    transform: scale(1.02);
+  }
+
+  .img-card {
+    margin-left: 105px;
+    margin-bottom: 14px;
+    box-shadow: -5px 80px 60px 10px #3840da4d;
+    background: #e21b1b;
+  }
+
+  .img-card:hover {
+    transform: scale(1.02);
+  }
+
+  .hero-arrow {
+    /* display: block; */
+    position: relative;
+    top: -45.5px;
+    right: -304px;
+    fill: #34387f;
+    width: 22px;
+    height: 22px;
+  }
+  
+  .hero-arrow-green,
+  .hero-arrow-red {
+    display: none;
+  }
+
+  .characters-border-line {
+    position: relative;
+    left: 109px;
+    width: 230px;
+    margin-bottom: 16px;
+  }
+  
+  .characters {
+    color: var(--text);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.17;
+  }
+  
+  .characters-section {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+  }
+  
+  .characters-desc {
+    width: 127px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    color: var(--text05);
+  }
+  
+  .slider-img,
+  .img-card {
+    width: 237px;
+    height: 343px;
+  }
+
+
+/* .hero_section {
     display: flex;
     flex-wrap: wrap;
 
@@ -88,7 +261,6 @@ border-radius: 50%;
 font-weight: 400;
 font-size: 12px;
 line-height: 1.2;
-/* or 117% */
 letter-spacing: -0.02em;
 color: var(--text05);
     
@@ -101,15 +273,16 @@ height: 0px;
 border: 1px solid rgba(250, 250, 250, 0.15);
   }
 
+
+  
+
   @media screen and (min-width: 768px) {
 
-    /* .web-subtitle {
-        padding-top: 210px;
-    } */
+
 
     .square {
         width: 144px;
         height: 144px;
     }
   }
-  @media screen and (min-width: 1440px) {}
+  @media screen and (min-width: 1440px) {} */
