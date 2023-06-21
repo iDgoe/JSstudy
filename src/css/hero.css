@@ -1,5 +1,8 @@
 @import url(./constants.css);
 
+body {
+  background-color: var(--background);
+}
 
 .hero {
     margin-bottom: 80px;
@@ -68,12 +71,146 @@ margin-top: 20px;
   /* NEEDS TO BE CHANGED AFTER JS SLIDER*/
 .spiderman-slider-img,
 .hulk-slider-img,
-.spiderman-card-img,
-.hulk-card-img,
 .characters-desc-spiderman,
 .characters-desc-hulk {
   display: none;
 }
+
+.hero-card-block {
+  width: 237px;
+  margin-left: auto;
+}
+
+.hero-card {
+  position: relative;
+  background-color: #171717;
+  width: 237px;
+  height: 343px;
+  padding-top: 120px;
+  overflow: hidden;
+  position: relative;
+  margin-left: auto;
+  margin-bottom: 14px;
+}
+
+.stripe {
+
+  background-color: white;
+  height: 1.2px;
+  transform: rotate(22deg);
+  margin-bottom: 13px;
+  width: 120%;
+  margin-left: -10%;
+}
+
+.icon-arrow2 {
+  fill: #34387F;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+bottom: 13;
+right: 17;
+   }
+
+.hero-circle {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #34387F;
+    bottom: 13;
+    left: 17;
+    background: radial-gradient(81.15% 81.15% at 50% 18.85%, #34387F 0%, #171717 100%);
+  }
+
+  .hero-circle-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.1;
+    color: #FAFAFA;
+    list-style: none;
+  text-align: center;
+  }
+
+  .hero-circle-text li:nth-child(2) {
+    display: none;
+    
+  }
+
+  .hero-circle-text li:nth-child(3) {
+    display: none;
+  }
+
+  .hero-png {
+    position: absolute;
+  }
+
+  .hero-png {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Додаткові стилі для .hero-png */
+  }
+
+  .hero-gradient {
+position: absolute;
+width: 260px;
+height: 234px;
+top: 1020px; 
+z-index: -1;
+background: #34387F;
+filter: blur(47px);
+border-radius: 200000px;
+  }
+  
+  /* .hero-png ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 5;
+  } */
+  
+  .hero-png li {
+    position: relative;}
+
+  .hero-png-panter {
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 319px;
+    left: 47px;
+    top: 23px;
+    filter: drop-shadow(0px 4px 28px rgba(7, 7, 7, 0.25));
+
+  }
+
+  .hero-png-spider{
+    position: absolute;
+    display: none;
+    width: 147px;
+    /* height: 359px; */
+    right: -70px;
+    top: 95px;
+    /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+    filter: drop-shadow(0px 4px 28px rgba(7, 7, 7, 0.25));
+  }
+
+  .hero-png-hulk{
+    position: absolute;
+    display: none;
+    width: 190px;
+    /* height: 359px; */
+    left: 5;
+    top: 90px;
+    /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+    filter: drop-shadow(0px 4px 28px rgba(7, 7, 7, 0.25));
+  }
+
+
 
 /* NEEDS TO BE CHANGED AFTER JS SLIDER*/
 .slider-buttons {
@@ -116,22 +253,22 @@ margin-top: 20px;
     margin-left: 105px;
     margin-bottom: 14px;
     box-shadow: -5px 80px 60px 10px #3840da4d;
-    background: #e21b1b;
+    /* background: #e21b1b; */
   }
 
   .img-card:hover {
     transform: scale(1.02);
   }
 
-  .hero-arrow {
-    /* display: block; */
+  /* .hero-arrow {
+ 
     position: relative;
     top: -45.5px;
     right: -304px;
     fill: #34387f;
     width: 22px;
     height: 22px;
-  }
+  } */
   
   .hero-arrow-green,
   .hero-arrow-red {
@@ -140,8 +277,8 @@ margin-top: 20px;
 
   .characters-border-line {
     position: relative;
-    left: 109px;
-    width: 230px;
+    margin-left: auto;
+    width: 237px;
     margin-bottom: 16px;
   }
   
@@ -171,7 +308,6 @@ margin-top: 20px;
     width: 237px;
     height: 343px;
   }
-
 
 /* .hero_section {
     display: flex;
