@@ -11,6 +11,8 @@ const circle = document.querySelector('.hero-circle');
 const arrow = document.querySelector('.icon-arrow2');
 const circleText = document.querySelector('.hero-circle-text');
 const cardShadow = document.querySelector('.hero-gradient');
+const heroCharactersText = document.querySelector('.characters-desc');
+const btnColor = document.querySelector('.hero-btn-characters');
 
 
 
@@ -30,13 +32,14 @@ function firstBtnClick() {
     hulkCard.style.display = 'none';
     circle.style.background = 'radial-gradient(81.15% 81.15% at 50% 18.85%, #34387F 0%, #171717 100%)';
     arrow.style.fill = '#34387F';
+    btnColor.style.backgroundColor = '#34387F';
     circleText.innerHTML = "BLACK PANTHER";
     cardShadow.style.background = '#34387F';
-   
+    heroCharactersText.innerHTML = 'TChalla is the king of the secretive and highly advanced African nation of Wakanda - as well as the powerful warrior known as the Black Panther.';
   };
 
 function middleBtnClick() {
-    firstBtn.style.backgroundColor = '#000000';
+    firstBtn.style.backgroundColor = '#171717';;
     lastBtn.style.backgroundColor = '#171717';
     middleBtn.style.backgroundColor = '#600404';
     spiderImg.style.display = 'block';
@@ -47,8 +50,10 @@ function middleBtnClick() {
     hulkCard.style.display = 'none';
     circle.style.background = 'radial-gradient(81.15% 81.15% at 50% 18.85%, #600404 0%, #171717 100%)';
     arrow.style.fill = '#600404';
+    btnColor.style.backgroundColor = '#600404';
     circleText.innerHTML = "SPIDER MAN";
     cardShadow.style.background = '#600404';
+    heroCharactersText.innerHTML = 'With amazing spider-like abilities, teenage science whiz Peter Parker fights crime and dreams of becoming an Avenger as Spider-Man.';
   };
 
   function lastBtnClick() {
@@ -63,8 +68,10 @@ function middleBtnClick() {
     hulkCard.style.display = 'block';
     circle.style.background = 'radial-gradient(81.15% 81.15% at 50% 18.85%, #5B7F3C 0%, #171717 100%)';
     arrow.style.fill = '#5B7F3C';
+    btnColor.style.backgroundColor = '#5B7F3C';
     circleText.innerHTML = "HULK";
     cardShadow.style.background = '#5B7F3C';
+    heroCharactersText.innerHTML = 'Exposed to heavy doses of gamma radiation, scientist Bruce Banner transforms into the mean, green rage machine called the Hulk.';
   };
 
 
