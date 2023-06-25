@@ -69,9 +69,7 @@ margin-top: 20px;
   }
 
   .hero-btn-characters {
-  
-    background-color: '#34387F' ;
- 
+    background-color: #272a65;
   }
 
   /* NEEDS TO BE CHANGED AFTER JS SLIDER*/
@@ -115,6 +113,11 @@ margin-top: 20px;
 bottom: 13;
 right: 17;
    }
+.icon-arrow2:focus{ 
+  transition: 0.1s ease-in-out;
+   transform: scale(1.01);
+  }
+  
 
 .hero-circle {
   position: absolute;
