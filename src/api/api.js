@@ -1,4 +1,4 @@
-import { key } from './credentials.js';
+import { key } from './keys.js';
 import hash from './hash.js';
 import axios from 'axios';
 

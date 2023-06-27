@@ -1,0 +1,86 @@
+@import url(./constants.css);
+@import url(./loader-placeholder.css);
+@import url(./random-characters.css);
+
+.rc-section {
+    padding: 40px 0;
+    background-color: var(--background);
+  }
+
+
+  .rc-title {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    margin-bottom: 44px;
+    color: var(--text);
+  }
+
+  .rc-block {
+    /* display: flex; */
+  }
+
+  .rc-item {
+    width: 335px;
+    height: 367px;
+  }
+
+  .rc-img {
+    object-fit: cover;
+    width: 335px;
+    height: 367px;
+  }
+
+  
+
+  .rc-list {
+    display: block;
+    position: relative;
+    width: 335px;
+    height: 388px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 335px;
+    height: 335px;
+    margin-bottom: 32px;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+  }
+
+  .rc-descr-item {
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-bottom: 1px solid var(--text05);
+  }
+
+  .rc-descr-text {
+    color: var(--text05);
+  }
+
+ .btn-container {
+    display: flex;
+  }
+  
+  .btn-rc {
+    margin-bottom: 80px;
+    margin-left: auto;
+    
+  }
+
+ 
+
