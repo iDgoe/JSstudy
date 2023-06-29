@@ -31,7 +31,7 @@ const getRandomFive = async () => {
 }console.log(results);
 rcImgList.innerHTML = randomImgMarkup(results);
 rcDescrList.innerHTML = randomDeskrMarkup(results);
-
+setInterval(nextSlide, 3500);
 liImg = document.querySelectorAll('.rc-img');
 liText = document.querySelectorAll('.rc-descr-item');
 
@@ -86,8 +86,6 @@ function randomDeskrMarkup(array) {
       .join('');
     return markup;
   }
-  
-  setInterval(nextSlide, 3500);
   
   function nextSlide () {
     liImg[currentIndexImg].className = 'slide rc-img';
