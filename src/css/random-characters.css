@@ -19,19 +19,13 @@
     color: var(--text);
   }
 
-  .rc-block {
-    /* display: flex; */
-  }
 
-  .rc-item {
-    width: 335px;
-    height: 367px;
-  }
 
   .rc-img {
     object-fit: cover;
-    width: 335px;
+    width: 100%px;
     height: 367px;
+
   }
 
   
@@ -39,7 +33,7 @@
   .rc-list {
     display: block;
     position: relative;
-    width: 335px;
+    width: 100%px;
     height: 388px;
     margin-left: auto;
     margin-right: auto;
@@ -49,8 +43,8 @@
     position: absolute;
     left: 0px;
     top: 0px;
-    width: 335px;
-    height: 335px;
+    width: 100%px;
+    height: 365px;
     margin-bottom: 32px;
     opacity: 0;
     z-index: 1;
@@ -58,6 +52,7 @@
     -moz-transition: opacity 1s;
     -o-transition: opacity 1s;
     transition: opacity 1s;
+    border-radius: 20%;
   }
 
   .rc-descr-item {
@@ -81,6 +76,120 @@
     margin-left: auto;
     
   }
+
+  .showing {
+    opacity: 1;
+    /* z-index: 2; */
+  }
+
+  .active-text .rc-descr-title,
+  .active-text .rc-descr-text {
+  color: var(--random_characters);
+}
+
+@media screen and (min-width: 768px) {
+  .rc-container {
+    width: 734px;
+  }
+
+  .slide {
+
+    height: 704px;
+  }
+
+  .rc-section {
+    padding: 64px 0;
+  }
+
+  .rc-title {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 1;
+
+    margin-bottom: 50px;
+  }
+
+  .rc-list {
+
+    height: 736px;
+  }
+
+  .rc-img {
+    object-fit: cover;
+
+    height: 704px;
+  }
+  .rc-descr-title {
+    font-size: 24px;
+    line-height: 1;
+  }
+  .rc-descr-text {
+    font-size: 16px;
+    line-height: 1.13;
+  }
+
+  .btn-rc {
+   margin-top: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .rc-container {
+    width: 1406px;
+  }
+
+  .rc-block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .rc-list {
+    position: relative;
+    display: inline;
+    margin: 0;
+    width: 477px;
+    height: 736px;
+  }
+
+  .slide {
+    width: 477px;
+    left: -5px;
+
+  }
+  .rc-item {
+    display: flex;
+    gap: 32px;
+    width: 496px;
+  }
+
+  .rc-descr-list {
+    width: 848px;
+    height: 70px;
+  }
+
+  .slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rc-img {
+    width: 467px;
+    height: 704px;
+    object-fit: cover;
+  }
+
+  .slider-blank-box {
+    width: 496px;
+    height: 704px;
+    z-index: -1;
+  }
+
+  .rc-descr-text {
+    overflow: hidden;
+    max-height: 2.26rem;
+  }
+}
 
  
 

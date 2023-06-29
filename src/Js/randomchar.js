@@ -7,8 +7,11 @@ import {
 
 const rcImgList = document.querySelector('.rc-list');
 const rcDescrList = document.querySelector('.rc-descr-list');
-const btn = document.querySelector('.rc-btn-container');
-const rcBox = document.querySelector('.rc-box');
+let currentIndex = 0;
+let currentIndexImg = 0;
+let liImg = null;
+let liText = null;
+
 
 
 const getRandomOffset = () => {
@@ -28,15 +31,23 @@ const getRandomFive = async () => {
 }console.log(results);
 rcImgList.innerHTML = randomImgMarkup(results);
 rcDescrList.innerHTML = randomDeskrMarkup(results);
+
+liImg = document.querySelectorAll('.rc-img');
+liText = document.querySelectorAll('.rc-descr-item');
+
+// setInterval(nextSlide, 3500);
+// nextSlide();
 };
 
 let rcData = getRandomFive()
 console.log(rcData);
+let headings = [];
+let texts = [];
 
 function randomImgMarkup(array) {
     const markup = array
       .map(({ id, thumbnail }) => {
-        return `  <li class='rc-item slide' data-id="${id}">
+        return `  <li class='slide rc-img' data-id="${id}">
         <picture>
         <source media="(min-width: 1440px)" srcset="${thumbnail.path}.${thumbnail.extension}" />
         <source media="(min-width: 375px)" srcset="${thumbnail.path}.${thumbnail.extension}"/>
@@ -65,4 +76,21 @@ function randomDeskrMarkup(array) {
     return markup;
   }
   
+  setInterval(nextSlide, 3500);
+  
+  function nextSlide () {
+    // console.log(liImg);
+    // console.log(liText);
+    liImg[currentIndexImg].className = 'slide rc-img';
+    liText[currentIndex].className = 'rc-descr-item';
+    // currentIndex = (currentIndex + 1) % liText.length;
+    currentIndexImg = (currentIndexImg + 2) % liImg.length;
+    currentIndex = (currentIndex + 1) % liText.length;
+    liImg[currentIndexImg].className = 'slide rc-img showing';
+    liText[currentIndex].className = 'rc-descr-item active-text';
+  };
+
+
+
+
 
