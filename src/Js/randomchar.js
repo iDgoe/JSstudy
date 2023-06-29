@@ -47,6 +47,8 @@ let texts = [];
 function randomImgMarkup(array) {
     const markup = array
       .map(({ id, thumbnail }) => {
+        const securePath = thumbnail.path.replace('http://', 'https://');
+        const secureExtension = thumbnail.extension;
         return `  <li class='slide rc-img' data-id="${id}">
         <picture>
         <source media="(min-width: 1440px)" srcset="${thumbnail.path}.${thumbnail.extension}" />
@@ -79,11 +81,8 @@ function randomDeskrMarkup(array) {
   setInterval(nextSlide, 3500);
   
   function nextSlide () {
-    // console.log(liImg);
-    // console.log(liText);
     liImg[currentIndexImg].className = 'slide rc-img';
     liText[currentIndex].className = 'rc-descr-item';
-    // currentIndex = (currentIndex + 1) % liText.length;
     currentIndexImg = (currentIndexImg + 2) % liImg.length;
     currentIndex = (currentIndex + 1) % liText.length;
     liImg[currentIndexImg].className = 'slide rc-img showing';
