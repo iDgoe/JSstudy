@@ -51,16 +51,25 @@ function randomImgMarkup(array) {
         const secureExtension = thumbnail.extension;
         return `  <li class='slide rc-img' data-id="${id}">
         <picture>
-        <source media="(min-width: 1440px)" srcset="${thumbnail.path}.${thumbnail.extension}" />
-        <source media="(min-width: 375px)" srcset="${thumbnail.path}.${thumbnail.extension}"/>
+        <source media="(min-width: 1440px)" srcset="${securePath}.${secureExtension}" />
+        <source media="(min-width: 375px)" srcset="${securePath}.${secureExtension}"/>
         <img class="rc-img" data-id="${id}"
-          src='${thumbnail.path}.${thumbnail.extension}'
+          src='${securePath}.${secureExtension}'
           alt=''
         /></picture>`;
-      })
-      .join('');
-    return markup;
-  }
+    })
+    .join('');
+
+  return markup;
+}
+
+
+
+
+
+
+
+
   
 
 function randomDeskrMarkup(array) {
