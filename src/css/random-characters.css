@@ -19,16 +19,12 @@
     color: var(--text);
   }
 
-
-
   .rc-img {
     object-fit: cover;
     width: 100%px;
     height: 367px;
-
   }
 
-  
 
   .rc-list {
     display: block;

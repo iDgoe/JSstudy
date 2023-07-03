@@ -28,21 +28,17 @@ const getRandomFive = async () => {
          offset: getRandomOffset(),
         });
         results.push(result[0]);
-}console.log(results);
+}
+// console.log(results);
 rcImgList.innerHTML = randomImgMarkup(results);
 rcDescrList.innerHTML = randomDeskrMarkup(results);
 setInterval(nextSlide, 3500);
 liImg = document.querySelectorAll('.rc-img');
 liText = document.querySelectorAll('.rc-descr-item');
-
-// setInterval(nextSlide, 3500);
-// nextSlide();
 };
 
 let rcData = getRandomFive()
 console.log(rcData);
-let headings = [];
-let texts = [];
 
 function randomImgMarkup(array) {
     const markup = array
@@ -62,15 +58,6 @@ function randomImgMarkup(array) {
 
   return markup;
 }
-
-
-
-
-
-
-
-
-  
 
 function randomDeskrMarkup(array) {
     const markup = array

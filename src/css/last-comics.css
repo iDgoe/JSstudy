@@ -1,0 +1,8 @@
+@import url(./constants.css);
+@import url(./loader-placeholder.css);
+@import url(./random-characters.css);
+
+.lc-list {
+    display: flex;
+    justify-content: space-between;
+}
