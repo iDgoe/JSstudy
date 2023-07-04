@@ -20,8 +20,8 @@
   }
 
   .rc-img {
-    object-fit: cover;
-    width: 100%px;
+    object-fit: fill;
+    width: 100%;
     height: 367px;
   }
 
@@ -29,7 +29,7 @@
   .rc-list {
     display: block;
     position: relative;
-    width: 100%px;
+    width: 100%;
     height: 388px;
     margin-left: auto;
     margin-right: auto;
@@ -111,7 +111,7 @@
   }
 
   .rc-img {
-    object-fit: cover;
+    object-fit: fill;
 
     height: 704px;
   }
@@ -170,13 +170,13 @@
   }
 
   .rc-img {
-    width: 467px;
+    width: 512px;
     height: 704px;
-    object-fit: cover;
+    object-fit: fill;
   }
 
   .slider-blank-box {
-    width: 496px;
+    width: 512px;
     height: 704px;
     z-index: -1;
   }
